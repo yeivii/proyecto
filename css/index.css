@@ -1,0 +1,136 @@
+body{
+  width: 90%;
+  margin: 0 5%;
+  border: black 1px solid;
+}
+.imagen {
+  width: 100%;
+  max-width: 100%;
+  float: left;
+}
+.artimg{
+  width: 768px;
+  max-width: 100%;
+
+  float: left;
+}
+
+.menuCSS3 {
+  width: 100%;
+}
+
+.menuCSS3 ul {
+  border-radius: 25px;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  font-family: 'Skranji', cursive;
+  margin-left: auto;
+}
+
+.menuCSS3 a {
+  border-radius: 25px;
+  display: block;
+  padding: 2em;
+  background-color: #F9B53C;
+  text-decoration: none;
+  color: #191C26;
+
+}
+
+.menuCSS3 a:hover {
+  background-color: #CC673B;
+}
+
+.menuCSS3 ul li ul {
+  display: none;
+}
+
+.menuCSS3 ul li a:hover+ul, .menuCSS3 ul li ul:hover {
+  display: block;
+}
+
+.derecha {
+  float: right;
+  margin-right:0;
+  margin-left: 40%;
+}
+
+.casita {
+  width: 15px;
+  height: 15px;
+}
+
+.formulario {
+  float: inherit;
+  position: absolute;
+  margin: 50%;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30%;
+  background-color: rgb(217, 223, 149);
+  padding: 50px;
+  object-fit: cover;
+}
+
+.cuadricula>img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  font-size: 30px;
+  margin: 20px;
+  margin-bottom: 0;
+
+}
+
+h1 {
+  width: 1000px;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+
+}
+
+div.container2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 10px 20px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.cubrir {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container1 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.container1:hover .cubrir {
+  bottom: 0;
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<?xml-stylesheet type="text/xsl" href="../html/index.xsl"?>
+<pagina>
+<volkswagen>
+  <coche modelo="181">
+    <foto ruta="../imagenes/181.jpg"/>
+  </coche>
+  <coche modelo="escarabajo">
+    <foto ruta="../imagenes/181.jpg"/>
+  </coche>
+  <coche modelo="furgoneta">
+    <foto ruta="../imagenes/furgoneta.jpg"/>
+  </coche>
+  <coche modelo="passat">
+    <foto ruta="../imagenes/passat.jpg"/>
+  </coche>
+  <coche modelo="sp2">
+    <foto ruta="../imagenes/181.jpg"/>
+  </coche>
+  <coche modelo="tipo3">
+    <foto ruta="../imagenes/tipo3.jpg"/>
+  </coche>
+</volkswagen>
+
+<BMW>
+  <coche>
+    <modelo></modelo>
+    <foto></foto>
+  </coche>
+</BMW>
+
+<renault>
+  <coche>
+    <modelo></modelo>
+    <foto></foto>
+  </coche>
+</renault>
+
+<opel>
+  <coche>
+    <modelo></modelo>
+    <foto></foto>
+  </coche>
+</opel>
+
+<audi>
+  <coche>
+    <modelo></modelo>
+    <foto></foto>
+  </coche>
+</audi>
+
+</pagina>
