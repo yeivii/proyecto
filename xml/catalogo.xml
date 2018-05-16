@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<meta charset="UTF-8">
+<?xml-stylesheet type="text/xsl" href="catalogo.xsd"?>
+<catalogo>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Volkswagen Tipo 1 conocido entre otros muchos nombres como Escarabajo, Vocho o Fusca.</modelo>
+        <foto>../imagenes/volkswagen/escarabajo.jpg</foto>
+        <descripcion>Fue uno de los coches preferidos durante décadas por conductores de todo el mundo, debido a su economía de mantenimiento y a su reducido gasto de combustible.Es un coche reconocido a nivel mundial, representativo de
+            la marca Volkswagen hasta el punto de que casi cualquier persona que lo vea sabe inmediatamente que es un Volkswagen por su inconfundible aspecto.</descripcion>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>El Volkswagen Safari, para america latina e Indonesia Volkswagen Tipo 181</modelo>
+        <foto>../imagenes/volkswagen/181.jpg</foto>
+        <descripcion>Es un pequeño vehículo militar producido por Volkswagen desde 1968 hasta 1980, aunque la comercialización de los autos para uso civil fue suspendida en 1980. Fue una evolución del K�&#338;belwagen, que había sido utilizado por el ejército alemán durante
+            la Segunda Guerra Mundial. El nombre significa literalmente «coche de mensajería»</descripcion>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Volkswagen SP</modelo>
+        <foto>../imagenes/volkswagen/sp2.jpg</foto>
+        <descripcion>La Serie SP fue una serie de vehículos deportivos desarrollados por la Volkswagen do Brasil. El nombre supuestamente es un acrónimo de la palabra São Paulo. Otras fuentes atribuyen estas siglas al término Special Project o Sport Prototype. </descripcion>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Volkswagen Passat</modelo>
+        <foto>../imagenes/volkswagen/passat.jpg</foto>
+        <descripcion>El Volkswagen Passat es un automóvil de turismo del segmento D producido por el fabricante alemán Volkswagen desde el año 1973. Según la carrocería, la época y el mercado, distintas variantes fueron vendidas bajo otras denominaciones, como Santana,
+            Quantum, Dasher, Magotan y Corsar.</descripcion>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Volkswagen Tipo 3, generalmente conocido como el Volkswagen "1500" </modelo>
+        <foto>../imagenes/volkswagen/tipo3.jpg</foto>
+        <descripcion>Fue una gama de autos perteneciente al Segmento D desarrollada por el fabricante de automóviles alemán Volkswagen producidos en el periodo comprendido entre 1961 y 1973. De esta gama son conocidas sus carrocerías Sedán 2 puertas, Fastback 2
+            puertas, y familiar 3 puertas, denominada por el fabricante como Variant.</descripcion>
+    </coche>
+    <coche>
+        <marca>Volkswagen</marca>
+        <modelo>Volkswagen Transporter o Volkswagen Tipo 2</modelo>
+        <foto>../imagenes/volkswagen/furgoneta.jpg</foto>
+        <descripcion>Su producción comenzó 8 de marzo de 1950. Impulsado por un motor bóxer de cuatro cilindros de 25 CV refrigerado por aire en la parte trasera, con capacidad para cargar 760 kg y alcanzar una velocidad máxima de 80 km/h y entre las utilidades
+            que le fueron descubiertas al poco tiempo están su adaptación como ambulancia y como coche de bomberos.</descripcion>
+    </coche>
+</catalogo>

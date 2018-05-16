@@ -5,83 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="shortcut icon" href="imagenes/iconos/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="imagenes/iconos/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../imagenes/iconos/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../imagenes/iconos/favicon.ico" type="image/x-icon">
   <title>Proyecto</title>
 </head>
+<script>
+function loadXMLDoc(filename)
+{
+if (window.ActiveXObject)
+  {
+  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  }
+else
+  {
+  xhttp = new XMLHttpRequest();
+  }
+xhttp.open("GET", filename, false);
+try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+xhttp.send("");
+return xhttp.responseXML;
+}
 
-<body>
+function displayResult()
+{
+xml = loadXMLDoc("catalogo.xml");
+xsl = loadXMLDoc("catalogo.xsl");
+// code for IE
+if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+  {
+  ex = xml.transformNode(xsl);
+  document.getElementById("example").innerHTML = ex;
+  }
+// code for Chrome, Firefox, Opera, etc.
+else if (document.implementation && document.implementation.createDocument)
+  {
+  xsltProcessor = new XSLTProcessor();
+  xsltProcessor.importStylesheet(xsl);
+  resultDocument = xsltProcessor.transformToFragment(xml, document);
+  document.getElementById("example").appendChild(resultDocument);
+  }
+}
+</script>
+<body onload="displayResult()">
   <header class="menuCSS3">
     <ul>
-      <li><a href="index.html"><img src="imagenes/iconos/casita.png" alt="inicio" class="casita"></a></li>
-      <li><a href="html/volkswagen.html"><img src="imagenes/iconos/volkswagen.png" alt=""> </a>
+      <li><a href="../index.html"><img src="../imagenes/iconos/casita.png" alt="inicio" class="casita"></a></li>
+      <li><a href="volkswagen.html"><img src="../imagenes/iconos/volkswagen.png" alt=""> </a>
         <ul>
           <li><a href="">Clásicos</a></li>
           <li><a href="">Modernos</a></li>
           <li><a href="">Historicos</a></li>
         </ul>
       </li>
-      <li><a href="html/bmw.html"><img src="imagenes/iconos/bmw.png" alt=""></a>
+      <li><a href=""><img src="../imagenes/iconos/bmw.png" alt=""></a>
         <ul>
           <li><a href="">Clásicos</a></li>
           <li><a href="">Modernos</a></li>
           <li><a href="">Historicos</a></li>
         </ul>
       </li>
-      <li><a href=""><img src="imagenes/iconos/lexus.png" alt=""></a>
+      <li><a href=""><img src="../imagenes/iconos/lexus.png" alt=""></a>
         <ul>
           <li><a href="">Clásicos</a></li>
           <li><a href="">Modernos</a></li>
           <li><a href="">Historicos</a></li>
         </ul>
       </li>
-      <li><a href=""><img src="imagenes/iconos/nissan.png" alt=""></a>
+      <li><a href=""><img src="../imagenes/iconos/nissan.png" alt=""></a>
         <ul>
           <li><a href="">Clásicos</a></li>
           <li><a href="">Modernos</a></li>
           <li><a href="">Historicos</a></li>
         </ul>
       </li>
-      <li><a href=""><img src="imagenes/iconos/citroen.png" alt=""></a>
+      <li><a href=""><img src="../imagenes/iconos/citroen.png" alt=""></a>
         <ul>
           <li><a href="">Clásicos</a></li>
           <li><a href="">Modernos</a></li>
           <li><a href="">Historicos</a></li>
         </ul>
       </li>
-      <li><a href=""><img src="imagenes/iconos/tesla.png" alt=""></a></li>
-      <li><a href=""><img src="imagenes/iconos/peugeot.png" alt=""></a></li>
-      <li style="border-right:1px solid #595959;"><a href=""><img src="imagenes/iconos/honda.png" alt=""></a></li>
+      <li><a href=""><img src="../imagenes/iconos/tesla.png" alt=""></a></li>
+      <li><a href=""><img src="../imagenes/iconos/peugeot.png" alt=""></a></li>
+      <li style="border-right:1px solid #595959;"><a href=""><img src="../imagenes/iconos/honda.png" alt=""></a></li>
 
-      <li style="margin-left: 40%; border:1px solid #595959;"><a href="#" onclick="document.getElementById('id01').style.display='block'" > <img width="32px" height="32px" src="imagenes/iconos/contrasena.png" alt=""></li></a>
-        <li style="border:1px solid #595959;"><a href="#" onclick="document.getElementById('id02').style.display='block'"><img src="imagenes/iconos/valoracion.png" alt=""></a></li>
+      <li style="margin-left: 40%; border:1px solid #595959;"><a href="#" onclick="document.getElementById('id01').style.display='block'" > <img width="32px" height="32px" src="../imagenes/iconos/contrasena.png" alt=""></li></a>
+        <li style="border:1px solid #595959;"><a href="#" onclick="document.getElementById('id02').style.display='block'"><img src="../imagenes/iconos/valoracion.png" alt=""></a></li>
     </ul>
   </header>
-  <div class="slider">
-			<ul>
-				<li>
-  <img src="imagenes/volkswagen/header.jpg" alt="">
- </li>
-				<li>
-  <img src="imagenes/bmw/BMWE30.jpg" alt="">
-</li>
-				<li>
-  <img src="imagenes/audi/header.jpg" alt="">
-</li>
-				<li>
-  <img src="imagenes/opel/header.jpg" alt="">
-</li>
-			</ul>
-		</div>
+  <img src="../imagenes/volkswagen/header.jpg" alt="" class="imagen">
+<section class="cuadricula">
+      <article id="example"/>
+</section>
+
   <div id="id01" class="modal">
 
     <form class="modal-content animate">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="imagenes/chemita.jpg" alt="Avatar" class="avatar">
+        <img src="../imagenes/chemita.jpg" alt="Avatar" class="avatar">
       </div>
 
       <div class="container">
@@ -110,12 +135,12 @@
       <div class="imgcontainer">
         <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Aspa cerrar">&times;</span>
         <h1 class="val">Valóranos</h1>
-        <img src="imagenes/iconos/evaluacion.png" alt="Avatar" class="avatar">
+        <img src="../imagenes/iconos/evaluacion.png" alt="Avatar" class="avatar">
       </div>
 
       <div class="container">
         <div class="star-rating">
-          <li>Eleccion de imágenes</li>
+          <li><b>Eleccion de imágenes</b></li>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
@@ -123,7 +148,7 @@
           <a href="#">&#9733;</a>
         </div>
         <div class="star-rating">
-          <li>Estética de la página</li>
+          <li><b>Estética de la página</b></li>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
@@ -131,14 +156,14 @@
           <a href="#">&#9733;</a>
         </div>
         <div class="star-rating">
-          <li>Mejor clásicos o modernos</li>
+          <li><b>Mejor clásicos o modernos</b></li>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
           <a href="#">&#9733;</a>
         </div>
-        <li>Comentarios</li>
+        <li><b>Comentarios</b></li>
         <textarea name="name" rows="8" cols="80"></textarea>
         <button type="submit">Enviar</button>
       </div>
@@ -151,11 +176,11 @@
 
   <footer>
     <div class="iconos">
-      <a href="#"><img src="imagenes/iconos/cono.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/grua.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/clave.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/camara.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/aparcamiento.png" alt=""></a>
+      <a href="#"><img src="../imagenes/iconos/cono.png" alt=""></a>
+      <a href="#"><img src="../imagenes/iconos/grua.png" alt=""></a>
+      <a href="#"><img src="../imagenes/iconos/clave.png" alt=""></a>
+      <a href="#"><img src="../imagenes/iconos/camara.png" alt=""></a>
+      <a href="#"><img src="../imagenes/iconos/aparcamiento.png" alt=""></a>
     </div>
     <p>Esta página ha sido creada por Javier Marcos Arteaga</p>
     <ul>
