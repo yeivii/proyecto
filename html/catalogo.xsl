@@ -5,9 +5,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
   <link rel="stylesheet" type="text/css" href="index.css"/>
-   <h1>Historial de vehículos</h1>
+
+   <section class="cuadricula">
+     <h1>Historial de vehículos</h1><br/>
 <xsl:for-each select="catalogo/coche">
-  <article class="container1" >
+  <article class="container1">
     <img class="artimg" >
       <xsl:attribute name="src">
       <xsl:value-of select="foto"/>
@@ -23,5 +25,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   </div>
 </article>
   </xsl:for-each>
+</section>
 </xsl:template>
 </xsl:stylesheet>

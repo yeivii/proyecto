@@ -153,25 +153,6 @@ header ul>li:hover ul li {
   margin-bottom: 0;
 }
 
-/*slider de fumeta-man
-.slider{
-width: 95%;
-margin: auto;
-overflow: hidden;
-}
-.slider ul{
-display: flex;
-padding: 0px;
-width: 400%;
-
-animation: cambio 20s infinite alternate linear;
-}
-
-@keyframes cambio {
-  0%{margin-left: 0;}
-}
-*/
-
 h1 {
   width: 1000px;
   font-family: 'Pacifico', cursive;
@@ -205,7 +186,7 @@ div.container2 {
 }
 
 .text {
-  overflow: 
+  overflow:
   color: white;
   font-size: 20px;
   position: absolute;
