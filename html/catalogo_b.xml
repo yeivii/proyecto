@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="catalogo_b.xsl"?>
+<catalogo>
+  <coche id="1">
+    <foto>../imagenes/bmw/bmw1.jpg</foto>
+    <marca>bmw</marca>
+    <modelo>bmw Tipo 1 conocido entre otros muchos nombres como Escarabajo, Vocho o Fusca.</modelo>
+    <descripcion>Fue uno de los coches preferidos durante décadas por conductores de todo el mundo, debido a su economía de mantenimiento y a su reducido gasto de combustible.Es un coche reconocido a nivel mundial, representativo de la marca bmw
+      hasta el punto de que casi cualquier persona que lo vea sabe inmediatamente que es un bmw por su inconfundible aspecto.</descripcion>
+  </coche>
+  <coche id="2">
+    <marca>bmw</marca>
+    <modelo>El bmw Safari, para america latina e Indonesia bmw Tipo 181</modelo>
+    <foto>../imagenes/bmw/bmw518.jpg</foto>
+    <descripcion>Es un pequeño vehículo militar producido por bmw desde 1968 hasta 1980, aunque la comercialización de los autos para uso civil fue suspendida en 1980. Fue una evolución del K�&#338;belwagen, que había sido utilizado por el
+      ejército alemán durante la Segunda Guerra Mundial. El nombre significa literalmente «coche de mensajería»</descripcion>
+  </coche>
+  <coche id="3">
+    <marca>bmw</marca>
+    <modelo>bmw SP</modelo>
+    <foto>../imagenes/bmw/bmw635.jpg</foto>
+    <descripcion>La Serie SP fue una serie de vehículos deportivos desarrollados por la bmw do Brasil. El nombre supuestamente es un acrónimo de la palabra São Paulo. Otras fuentes atribuyen estas siglas al término Special Project o Sport Prototype.
+    </descripcion>
+  </coche>
+  <coche id="4">
+    <marca>bmw</marca>
+    <modelo>bmw Passat</modelo>
+    <foto>../imagenes/bmw/bmw2002.jpg</foto>
+    <descripcion>El bmw Passat es un automóvil de turismo del segmento D producido por el fabricante alemán bmw desde el año 1973. Según la carrocería, la época y el mercado, distintas variantes fueron vendidas bajo otras denominaciones,
+      como Santana, Quantum, Dasher, Magotan y Corsar.</descripcion>
+  </coche>
+  <coche id="5">
+    <marca>bmw</marca>
+    <modelo>bmw Tipo 3, generalmente conocido como el bmw "1500"
+    </modelo>
+    <foto>../imagenes/bmw/bmwi81.jpg</foto>
+    <descripcion>Fue una gama de autos perteneciente al Segmento D desarrollada por el fabricante de automóviles alemán bmw producidos en el periodo comprendido entre 1961 y 1973. De esta gama son conocidas sus carrocerías Sedán 2 puertas,
+      Fastback 2 puertas, y familiar 3 puertas, denominada por el fabricante como Variant.</descripcion>
+  </coche>
+  <coche id="6">
+    <marca>bmw</marca>
+    <modelo>bmw Transporter o bmw Tipo 2</modelo>
+    <foto>../imagenes/bmw/mwm2.jpg</foto>
+    <descripcion>Su producción comenzó 8 de marzo de 1950. Impulsado por un motor bóxer de cuatro cilindros de 25 CV refrigerado por aire en la parte trasera, con capacidad para cargar 760 kg y alcanzar una velocidad máxima de 80 km/h y entre las
+      utilidades que le fueron descubiertas al poco tiempo están su adaptación como ambulancia y como coche de bomberos.</descripcion>
+  </coche>
+</catalogo>

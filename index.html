@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -56,26 +56,26 @@
       <li><a href=""><img src="imagenes/iconos/peugeot.png" alt=""></a></li>
       <li style="border-right:1px solid #595959;"><a href=""><img src="imagenes/iconos/honda.png" alt=""></a></li>
 
-      <li style="margin-left: 40%; border:1px solid #595959;"><a href="#" onclick="document.getElementById('id01').style.display='block'" > <img width="32px" height="32px" src="imagenes/iconos/contrasena.png" alt=""></li></a>
+      <li style="margin-left: 40%; border:1px solid #595959;"><a href="#" onclick="document.getElementById('id01').style.display='block'"> <img width="32px" height="32px" src="imagenes/iconos/contrasena.png" alt=""></li></a>
         <li style="border:1px solid #595959;"><a href="#" onclick="document.getElementById('id02').style.display='block'"><img src="imagenes/iconos/valoracion.png" alt=""></a></li>
     </ul>
   </header>
-  <div class="slider">
-			<ul>
-				<li>
-  <img src="imagenes/volkswagen/header.jpg" alt="">
- </li>
-				<li>
-  <img src="imagenes/bmw/BMWE30.jpg" alt="">
-</li>
-				<li>
-  <img src="imagenes/audi/header.jpg" alt="">
-</li>
-				<li>
-  <img src="imagenes/opel/header.jpg" alt="">
-</li>
-			</ul>
-		</div>
+  <nav class="slider">
+    <ul>
+      <li>
+        <img src="imagenes/volkswagen/header.jpg" alt="">
+      </li>
+      <li>
+        <img src="imagenes/bmw/BMWE30.jpg" alt="">
+      </li>
+      <li>
+        <img src="imagenes/audi/header.jpg" alt="">
+      </li>
+      <li>
+        <img src="imagenes/opel/header.jpg" alt="">
+      </li>
+    </ul>
+  </nav>
   <div id="id01" class="modal">
 
     <form class="modal-content animate">
@@ -102,17 +102,13 @@
       </div>
     </form>
   </div>
-
-
   <div id="id02" class="modal">
-
     <form class="modal-content animate">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Aspa cerrar">&times;</span>
         <h1 class="val">Valóranos</h1>
         <img src="imagenes/iconos/evaluacion.png" alt="Avatar" class="avatar">
       </div>
-
       <div class="container">
         <div class="star-rating">
           <li>Eleccion de imágenes</li>
@@ -142,28 +138,26 @@
         <textarea name="name" rows="8" cols="80"></textarea>
         <button type="submit">Enviar</button>
       </div>
-
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
     </form>
   </div>
-
-  <footer>
-    <div class="iconos">
-      <a href="#"><img src="imagenes/iconos/cono.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/grua.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/clave.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/camara.png" alt=""></a>
-      <a href="#"><img src="imagenes/iconos/aparcamiento.png" alt=""></a>
-    </div>
-    <p>Esta página ha sido creada por Javier Marcos Arteaga</p>
-    <ul>
-      <li>Puedes ver el pasado de las marcas actuales</li>
-      <li>Ver los modelos de coches que tuvieron tus padres</li>
-      <li>Coger ideas para modificar tu clásico</li>
-    </ul>
-  </footer>
 </body>
+<footer>
+  <div class="iconos">
+    <a href="#"><img src="imagenes/iconos/cono.png" alt=""></a>
+    <a href="#"><img src="imagenes/iconos/grua.png" alt=""></a>
+    <a href="#"><img src="imagenes/iconos/clave.png" alt=""></a>
+    <a href="#"><img src="imagenes/iconos/camara.png" alt=""></a>
+    <a href="#"><img src="imagenes/iconos/aparcamiento.png" alt=""></a>
+  </div>
+  <p>Esta página ha sido creada por Javier Marcos Arteaga</p>
+  <ul>
+    <li>Puedes ver el pasado de las marcas actuales</li>
+    <li>Ver los modelos de coches que tuvieron tus padres</li>
+    <li>Coger ideas para modificar tu clásico</li>
+  </ul>
+</footer>
 
 </html>
